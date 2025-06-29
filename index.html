@@ -19,21 +19,21 @@
         }
         
         .top-logo {
-            width: 180px; /* Larger size */
+            width: 180px;
             height: auto;
-            margin-bottom: 25px; /* Increased spacing */
+            margin-bottom: 25px;
             filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
         }
         
         .content {
             text-align: center;
             width: 90%;
-            max-width: 600px; /* Wider container */
+            max-width: 600px;
         }
         
         .logo {
             width: 100%;
-            max-width: 500px; /* Much larger PS4 logo */
+            max-width: 500px;
             height: auto;
             margin-bottom: 10px;
             filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
@@ -41,13 +41,15 @@
         
         .description {
             color: white;
-            font-size: 0.75rem; /* Slightly larger text */
+            font-size: 0.80rem;
             line-height: 1.3;
-            letter-spacing: -0.00em;
+            letter-spacing: -0.0em;
             text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-            margin: 0 auto 25px;
-            padding: 0 60px;
+            margin: 0 auto 30px;
+            padding: 0 13px;
+            font-family: 'Linear Grotesk Light', sans-serif;
             font-weight: 300;
+            -webkit-font-smoothing: antialiased;
         }
         
         .download-btn {
@@ -56,24 +58,47 @@
             -webkit-background-clip: text;
             background-clip: text;
             border: 2px solid white;
-            padding: 14px 35px; /* Larger button */
-            font-size: 1.1rem; /* Larger text */
+            padding: 14px 35px;
+            font-size: 1.1rem;
             font-family: 'Linear Grotesk Regular', sans-serif;
             font-weight: 400;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s ease;
             margin-top: 15px;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.5px;
             position: relative;
             overflow: hidden;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
         }
         
         .download-btn:hover {
             background: rgba(255, 255, 255, 0.2);
             color: white;
-            transform: translateY(-3px); /* More pronounced hover */
-            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+        }
+        
+        .download-btn:after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            opacity: 0;
+            margin: -2.5px 0 0 -2.5px;
+            transition: width 0.4s, height 0.4s, margin 0.4s, opacity 0.4s;
+        }
+        
+        .download-btn:active:after {
+            width: 200px;
+            height: 200px;
+            margin: -100px 0 0 -100px;
+            opacity: 1;
+            transition: width 0.4s, height 0.4s, margin 0.4s, opacity 0s;
         }
         
         @media (max-width: 600px) {
@@ -85,12 +110,12 @@
                 margin-bottom: 20px;
             }
             .logo {
-                max-width: 380px; /* Still large on mobile */
+                max-width: 380px;
                 margin-bottom: 8px;
             }
             .description {
-                font-size: 0.8rem;
-                line-height: 1.85;
+                font-size: 0.80rem;
+                line-height: 1.35;
                 margin-bottom: 20px;
             }
             .download-btn {
@@ -102,11 +127,11 @@
 </head>
 <body>
     <img src="https://i.postimg.cc/Xqf5fVYK/20250628-230842.png" 
-         alt="New Top Logo" 
+         alt="Top Logo" 
          class="top-logo">
     
     <div class="content">
-        <img src="https://i.postimg.cc/D0JXNvZb/20250628-230452.png" 
+        <img src="https://i.postimg.cc/PxWXmFqy/20250629-012220.png" 
              alt="PlayStation Logo" 
              class="logo">
         <p class="description">
